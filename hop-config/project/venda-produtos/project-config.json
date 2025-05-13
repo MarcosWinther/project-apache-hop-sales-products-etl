@@ -1,0 +1,11 @@
+{
+  "description" : "Projeto criado no curso 'Super Academia Engenharia de Dados - 9 cursos em 1' na plataforma UDEMY",
+  "metadataBaseFolder" : "${PROJECT_HOME}/metadata",
+  "unitTestsBasePath" : "${PROJECT_HOME}",
+  "dataSetsCsvFolder" : "${PROJECT_HOME}/datasets",
+  "enforcingExecutionInHome" : true,
+  "parentProjectName" : "default",
+  "config" : {
+    "variables" : [ ]
+  }
+}

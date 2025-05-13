@@ -1,0 +1,28 @@
+# Saídas geradas por execução
+*.log
+
+# Arquivos temporários
+*.tmp
+*.bak
+*.swp
+*.~*
+
+# Configurações locais e sensíveis
+*.env
+*.hdi
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# IDEs e editores
+.vscode/
+.idea/
+*.code-workspace
+
+# Cache de linguagens, se scripts auxiliares forem usados
+__pycache__/
+*.pyc
+
+# Arquivos de backup automáticos
+*~
