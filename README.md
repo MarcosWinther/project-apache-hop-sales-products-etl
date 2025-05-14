@@ -19,7 +19,7 @@ O objetivo deste projeto é demonstrar a construção de um pipeline de ETL (Ext
 
 - **Apache Hop**: Plataforma visual para orquestração de dados e ETL.
 - **Java**: Linguagem base do Apache Hop.
-- **Arquivos Excel (.xlsx)**: Utilizados como entrada e saída de dados.
+- **Arquivos Excel (.xlsx)**: Utilizados como entrada de dados.
 - **GitHub**: Para versionamento e colaboração.
 
 <br>
