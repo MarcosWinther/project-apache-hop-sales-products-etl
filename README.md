@@ -1,3 +1,4 @@
+
 # 🛠️ Projeto ETL com Apache Hop
 
 ![Apache Hop](https://img.shields.io/badge/Apache%20Hop-ETL%20Pipeline-blue?logo=apache)
@@ -18,7 +19,7 @@ O objetivo deste projeto é demonstrar a construção de um pipeline de ETL (Ext
 
 - **Apache Hop**: Plataforma visual para orquestração de dados e ETL.
 - **Java**: Linguagem base do Apache Hop.
-- **Arquivos CSV**: Utilizados como entrada e saída de dados.
+- **Arquivos Excel (.xlsx)**: Utilizados como entrada e saída de dados.
 - **GitHub**: Para versionamento e colaboração.
 
 <br>
@@ -26,12 +27,12 @@ O objetivo deste projeto é demonstrar a construção de um pipeline de ETL (Ext
 
 ## 🔌 Plugins Utilizados
 
-- **Text File Input**: Leitura de arquivos CSV de entrada (`venda.csv`, `cliente.csv`, `produto.csv`, `marca.csv`).
+- **Excel Input**: Leitura de arquivos CSV de entrada (`venda.csv`, `cliente.csv`, `produto.csv`, `marca.csv`).
 - **Modified Java Script Value** ou **Set Fields (UPPER)**: Conversão de textos para caixa alta nos campos de cliente, produto e marca.
 - **Sort Rows**: Ordenação dos dados para permitir o uso do `Merge Join`.
 - **Merge Join**: Junção dos dados relacionando vendas com clientes, produtos e marcas.
 - **Select Values**: Seleção e possível renomeação dos campos finais.
-- **Text File Output**: Geração do arquivo de saída consolidado.
+- **Text File Output (.txt)**: Geração do arquivo de saída consolidado.
 
 <br>
 
@@ -50,7 +51,7 @@ Abaixo, o diagrama completo do pipeline criado com o Apache Hop:
 ## 🔍 Etapas do Pipeline
 
 ### 1. **Leitura dos Dados**
-- Leitura dos arquivos de vendas, clientes, produtos e marcas.
+- Leitura dos arquivos Excel de vendas, clientes, produtos e marcas.
   
 ### 2. **Padronização**
 - Transformação dos nomes de `cliente`, `produto` e `marca` para caixa alta (UPPER) para garantir consistência.
@@ -63,7 +64,7 @@ Abaixo, o diagrama completo do pipeline criado com o Apache Hop:
 
 ### 5. **Seleção Final e Exportação**
 - Seleção dos campos relevantes com `Select Values`.
-- Geração do arquivo de saída com os dados de vendas enriquecidos.
+- Geração de um arquivo de texto (.txt) com os dados de vendas enriquecidos.
 
 <br>
 
@@ -96,8 +97,8 @@ project-apache-hop-sales-products-etl/
    git clone https://github.com/MarcosWinther/project-apache-hop-sales-products-etl
    ```
 2. Abra o projeto no Apache Hop.
-3. Acesse o pipeline `merge.hpl`.
-4. Execute o pipeline e verifique o arquivo de saída gerado.
+3. Acesse o pipeline `merge.hpl` no diretório `pipelines`.
+4. Execute o pipeline e verifique o arquivo de saída gerado em `output`.
 
 <br>
 
